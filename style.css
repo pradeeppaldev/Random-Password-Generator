@@ -37,7 +37,7 @@ body{
     height: 60px;
     width: 60px;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(251, 4, 4);
     margin-left: -130px;
 }
 #copyBtn img{
