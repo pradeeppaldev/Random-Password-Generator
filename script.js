@@ -18,3 +18,18 @@ generate.addEventListener('click', () => {
     passwordText.value = pass;
 
 });
+
+const copyButton = document.getElementById('copyBtn');
+
+    copyButton.addEventListener('click', () => {
+
+    copyText();
+    
+    function copyText() {
+        navigator.clipboard.writeText(pass).then(() => {
+            alert("Text copied: " + pass);
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+        });
+    }
+});
